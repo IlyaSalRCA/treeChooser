@@ -36,8 +36,8 @@ namespace treeChooser
 
         internal static void AddTree()
         {
-            Pine pine1 = new Pine(11, "eweer", "esfs", true, 12, 15);
-            pines.Add(pine1);
+            Pine pine_test = new Pine(11, "eweer", "esfs", true, 12, 15);
+            pines.Add(pine_test);
         }
     }
 }
