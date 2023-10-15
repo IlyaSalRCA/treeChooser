@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "treeChooser", "treeChooser\treeChooser.csproj", "{4F59BFD0-F83E-4765-A6AD-BEBD48D9BAB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F59BFD0-F83E-4765-A6AD-BEBD48D9BAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F59BFD0-F83E-4765-A6AD-BEBD48D9BAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F59BFD0-F83E-4765-A6AD-BEBD48D9BAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F59BFD0-F83E-4765-A6AD-BEBD48D9BAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E92E2B7-CDA0-4165-824C-6495C2785182}
+	EndGlobalSection
+EndGlobal
