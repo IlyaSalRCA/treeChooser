@@ -128,7 +128,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "От розового до буровато-красного",
-            "От темно-буроватого до желтовато-коричневого",
+            "От темно-бурого до желтовато-коричневого",
             "-"});
             this.comboBox1.Location = new System.Drawing.Point(326, 184);
             this.comboBox1.Name = "comboBox1";

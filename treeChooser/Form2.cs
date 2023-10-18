@@ -12,11 +12,13 @@ namespace treeChooser
 {
     public partial class Form2 : Form
     {
-        public Form2(double pineResult, double firResult)
+        public Form2(double pineResult, double firResult, double oakResult)
         {
             InitializeComponent();
+
             label1.Text = $"Древесина соответствует сосне на {pineResult}%";
             label2.Text = $"Древесина соответствует ели на {firResult}%";
+            label3.Text = $"Древесина соответствует дубу на {oakResult}%";
         }
     }
 }
