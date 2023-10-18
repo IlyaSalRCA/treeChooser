@@ -44,8 +44,14 @@ namespace treeChooser
             oakResult = Math.Round(oakScore / treeScore * 100, 2);
 
             Form2 form2 = new Form2(pineResult, firResult, oakResult);
+            
+            this.Hide();
 
-            form2.ShowDialog();
+            if(form2.ShowDialog() == DialogResult.Cancel)
+            {
+                Show();
+                form2.Dispose();
+            }
 
             pineScore = 0;
             firScore = 0;

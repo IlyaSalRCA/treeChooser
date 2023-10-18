@@ -64,8 +64,22 @@ namespace treeChooser
         {
             switch(treeTypeIndex)
             {
-                case 0:
-                    this.Close();
+                case 1:
+                    Form3 form3 = new Form3();
+                    form3.ShowDialog();
+                    this.Hide();
+                    break;
+                case 2:
+                    this.Hide();
+
+                    break;
+                case 3:
+                    this.Hide();
+
+                    break;
+                default:
+                    button1.DialogResult = DialogResult.Cancel;
+                    Hide();
                     break;
             }
         }
