@@ -8,6 +8,7 @@ namespace treeChooser
 {
     abstract class Tree
     {
+        string TreeColor { get; }
         bool TreeCore { get; }
         string CoreColor { get; }
         bool TreeResin { get; }
@@ -15,7 +16,6 @@ namespace treeChooser
         string TreeDensity { get; }
 
         int treeHumidity;
-        string treeType;
         string treeProcessing;
         bool treePlates;
         int treePlatesWidth;

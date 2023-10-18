@@ -8,6 +8,7 @@ namespace treeChooser
 {
     internal class Pine : Tree
     {
+        internal const string TreeColor = "Жёлтый оттенок с выраженным рисунком";
         internal const bool TreeCore = true;
         internal const string CoreColor = "От розового до буровато-красного";
         internal const bool TreeResin = true;
@@ -36,8 +37,9 @@ namespace treeChooser
 
         internal static void AddTree()
         {
-            Pine pine_test = new Pine(11, "eweer", "esfs", true, 12, 15);
-            pines.Add(pine_test);
+            Pine pine_ = new Pine(11, "eweer", "esfs", true, 12, 15);
+
+            pines.Add(pine_);
         }
     }
 }
