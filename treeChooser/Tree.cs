@@ -15,11 +15,12 @@ namespace treeChooser
         string TreeMedullary { get; }
         string TreeDensity { get; }
 
-        int treeHumidity;
+        string treeHumidity;
         string treeProcessing;
         bool treePlates;
-        int treePlatesWidth;
-        int treePlatesDepth;
+        bool treePlatesWidth;
+        bool treePlatesDepth;
+        string nomenclatureCode;
 
         List<Tree> trees;
     }

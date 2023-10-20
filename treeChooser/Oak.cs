@@ -15,13 +15,13 @@ namespace treeChooser
         internal const string TreeMedullary = "Хорошо различимы, светло-коричневые";
         internal const string TreeDensity = "Высокая плотность";
 
-        internal int treeHumidity;
+        internal string treeHumidity;
         internal string treeProcessing;
         internal bool treePlates;
         internal int treePlatesWidth;
         internal int treePlatesDepth;
 
-        internal Oak(int treeHumidity, string treeProcessing,
+        internal Oak(string treeHumidity, string treeProcessing,
             bool treePlates, int treePlatesWidth, int treePlatesDepth)
         {
             this.treeHumidity = treeHumidity;
