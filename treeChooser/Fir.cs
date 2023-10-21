@@ -18,28 +18,83 @@ namespace treeChooser
         internal string treeHumidity;
         internal string treeType;
         internal string treeProcessing;
+        internal string treeProcessingSecond;
         internal bool treePlates;
-        internal int treePlatesWidth;
-        internal int treePlatesDepth;
+        internal bool treePlatesWidth;
+        internal bool treePlatesDepth;
+        internal string nomenclatureCode;
 
         internal Fir(string treeHumidity, string treeType, string treeProcessing,
-            bool treePlates, int treePlatesWidth, int treePlatesDepth)
+            string treeProcessingSecond, bool treePlates, bool treePlatesWidth, bool treePlatesDepth, string nomenclatureCode)
         {
-            this.treeHumidity = treeHumidity;
-            this.treeType = treeType;
-            this.treeProcessing = treeProcessing;
-            this.treePlates = treePlates;
-            this.treePlatesWidth = treePlatesWidth;
-            this.treePlatesDepth = treePlatesDepth;
+            this.treeHumidity = treeHumidity; //Влажность
+            this.treeType = treeType; //Вид дерева
+            this.treeProcessing = treeProcessing; //Вид обработки
+            this.treeProcessingSecond = treeProcessingSecond; //Вид обработки при торц. соед.
+            this.treePlates = treePlates; //Наличие пласти
+            this.treePlatesWidth = treePlatesWidth; //Ширина пласти
+            this.treePlatesDepth = treePlatesDepth; //Толщина пласти
+            this.nomenclatureCode = nomenclatureCode; //Код ТН ВЭД
         }
 
         internal static List<Fir> firs = new List<Fir>();
 
         internal static void AddTree()
         {
-            Fir fir_ = new Fir(11, "eweer", "esfs", true, 12, 15);
+            Fir fir_1601 = new Fir("менее 22%", "-", "Шлифование или торцевое соединение", "Шлифование или строгание", false, false, false, "4407 12 160 1");
+            Fir fir_1603 = new Fir("менее 22%", "-", "Шлифование или торцевое соединение", "Прочее", false, false, false, "4407 12 160 3");
 
-            firs.Add(fir_);
+            Fir fir_1604 = new Fir("22% и более", "-", "Шлифование или торцевое соединение", "-", true, true, true, "4407 12 160 4");
+            Fir fir_1605 = new Fir("22% и более", "-", "Шлифование или торцевое соединение", "-", true, false, false, "4407 12 160 5");
+            Fir fir_1609 = new Fir("22% и более", "-", "Шлифование или торцевое соединение", "-", false, false, false, "4407 12 160 9");
+
+            Fir fir_3201 = new Fir("менее 22%", "Picea abies Karst.", "Строгание", "-", false, false, false, "4407 12 320 1");
+            Fir fir_3205 = new Fir("22% и более", "Picea abies Karst.", "Строгание", "-", true, true, true, "4407 12 320 5");
+            Fir fir_3206 = new Fir    ("22% и более", "Picea abies Karst.", "Строгание", "-", true, false, false, "4407 12 320 6");
+            Fir fir_3209 = new Fir("22% и более", "Picea abies Karst.", "Строгание", "-", false, false, false, "4407 12 320 9");
+
+            Fir fir_3901 = new Fir("менее 22%", "Иной", "Строгание", "-", false, false, false, "4407 12 390 1");
+            Fir fir_3905 = new Fir("22% и более%", "Иной", "Строгание", "-", true, true, true, "4407 12 390 5");
+            Fir fir_3906 = new Fir("22% и более", "Иной", "Строгание", "-", true, false, false, "4407 12 390 6");
+            Fir fir_3909 = new Fir("22% и более", "Иной", "Строгание", "-", false, false, false, "4407 12 390 9");
+
+            Fir fir_9901 = new Fir("менее 22%", "Иной", "Прочее", "-", false, false, false, "4407 12 990 1");
+            Fir fir_9905 = new Fir("22% и более", "Иной", "Прочее", "-    ", true, true, true, "4407 12 990 5");
+            Fir fir_9906 = new Fir("22% и более", "Иной", "Прочее", "-", true, false, false, "4407 12 990 6");
+            Fir fir_9909 = new Fir("22% и более", "Иной", "Прочее", "-", false, false, false, "4407 12 990 9");
+
+            Fir fir_9201 = new Fir("менее 22%", "Picea abies Karst.", "Прочее", "-", false, false, false, "4407 12 920 1");
+            Fir fir_9205 = new Fir("22% и более", "Picea abies Karst.", "Прочее", "-", true, true, true, "4407 12 920 5");
+            Fir fir_9206 = new Fir("22% и более", "Picea abies Karst.", "Прочее", "-", true, false, false, "4407 12 920 6");
+            Fir fir_9209 = new Fir("22% и более", "Picea abies Karst.", "Прочее", "-", false, false, false, "4407 12 920 9");
+
+
+            firs.Add(fir_1601);
+            firs.Add(fir_1603);
+            firs.Add(fir_1604);
+            firs.Add(fir_1605);
+            firs.Add(fir_1609);
+
+            firs.Add(fir_3201);
+            firs.Add(fir_3205);
+            firs.Add(fir_3206);
+            firs.Add(fir_3209);
+
+            firs.Add(fir_3901);
+            firs.Add(fir_3905);
+            firs.Add(fir_3906);
+            firs.Add(fir_3909);
+
+            firs.Add(fir_9901);
+            firs.Add(fir_9905);
+            firs.Add(fir_9906);
+            firs.Add(fir_9909);
+
+            firs.Add(fir_9201);
+            firs.Add(fir_9205);
+            firs.Add(fir_9206);
+            firs.Add(fir_9209);
+
         }
     }
 }
