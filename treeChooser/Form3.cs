@@ -12,7 +12,7 @@ namespace treeChooser
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        public Form3(int treeTypeIndex)
         {
             InitializeComponent();
         }

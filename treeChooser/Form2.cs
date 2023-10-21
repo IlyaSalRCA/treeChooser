@@ -62,18 +62,21 @@ namespace treeChooser
 
         private void button1_Click(object sender, EventArgs e)
         {
-            switch(treeTypeIndex)
+            Form3 form3 = new Form3(treeTypeIndex);
+
+            switch (treeTypeIndex)
             {
                 case 1:
-                    Form3 form3 = new Form3();
                     form3.ShowDialog();
                     this.Hide();
                     break;
                 case 2:
+                    form3.ShowDialog();
                     this.Hide();
 
                     break;
                 case 3:
+                    form3.ShowDialog();
                     this.Hide();
 
                     break;
