@@ -147,48 +147,6 @@ namespace treeChooser
                     break;
             }
 
-            /*if (comboBox4.Text == Pine.TreeColor)
-                pineScore++;
-            if (comboBox4.Text == Fir.TreeColor)
-                firScore++;
-            if (comboBox4.Text == Oak.TreeColor)
-                oakScore++;
-
-            if (checkBox1.Checked == Pine.TreeCore)
-                pineScore++;
-            if(checkBox1.Checked == Fir.TreeCore)
-                firScore++;
-            if (checkBox1.Checked == Oak.TreeCore)
-                oakScore++;
-
-            if (comboBox1.Text == Pine.CoreColor)
-                pineScore++;
-            if (comboBox1.Text == Fir.CoreColor)
-                firScore++;
-            if (comboBox1.Text == Oak.CoreColor)
-                oakScore++;
-
-            if (checkBox2.Checked == Pine.TreeResin)
-                pineScore++;
-            if (checkBox2.Checked == Fir.TreeResin)
-                firScore++;
-            if (checkBox2.Checked == Oak.TreeResin)
-                oakScore++;
-
-            if (comboBox2.Text == Pine.TreeMedullary)
-                pineScore++;
-            if (comboBox2.Text == Fir.TreeMedullary)
-                firScore++;
-            if (comboBox2.Text == Oak.TreeMedullary)
-                oakScore++;
-
-            if (comboBox3.Text == Pine.TreeDensity)
-                pineScore++;
-            if (comboBox3.Text == Fir.TreeDensity)
-                firScore++;
-            if (comboBox3.Text == Oak.TreeDensity)
-                oakScore++;*/
-
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

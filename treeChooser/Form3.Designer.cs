@@ -53,7 +53,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 175);
+            this.label1.Location = new System.Drawing.Point(12, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(219, 22);
             this.label1.TabIndex = 0;
@@ -68,6 +68,7 @@
             this.label2.Size = new System.Drawing.Size(119, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Вид дерева";
+            this.label2.Visible = false;
             // 
             // label3
             // 
@@ -83,11 +84,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(12, 94);
+            this.label4.Location = new System.Drawing.Point(12, 137);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(399, 22);
             this.label4.TabIndex = 3;
             this.label4.Text = "Вид обработки при торцевом соединении";
+            this.label4.Visible = false;
             // 
             // label5
             // 
@@ -98,6 +100,7 @@
             this.label5.Size = new System.Drawing.Size(271, 22);
             this.label5.TabIndex = 4;
             this.label5.Text = "Наличие деления на пласти";
+            this.label5.Visible = false;
             // 
             // label6
             // 
@@ -108,6 +111,7 @@
             this.label6.Size = new System.Drawing.Size(150, 22);
             this.label6.TabIndex = 5;
             this.label6.Text = "Ширина пласти";
+            this.label6.Visible = false;
             // 
             // label7
             // 
@@ -118,6 +122,7 @@
             this.label7.Size = new System.Drawing.Size(163, 22);
             this.label7.TabIndex = 6;
             this.label7.Text = "Толщина пласти";
+            this.label7.Visible = false;
             // 
             // comboBox1
             // 
@@ -126,10 +131,11 @@
             "менее 22%",
             "22% и более",
             "-"});
-            this.comboBox1.Location = new System.Drawing.Point(453, 175);
+            this.comboBox1.Location = new System.Drawing.Point(453, 90);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(274, 24);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -142,6 +148,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(274, 24);
             this.comboBox2.TabIndex = 8;
+            this.comboBox2.Visible = false;
             // 
             // comboBox3
             // 
@@ -154,14 +161,19 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(274, 24);
             this.comboBox3.TabIndex = 9;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(453, 94);
+            this.comboBox4.Items.AddRange(new object[] {
+            "Шлифование или строгание",
+            "Прочее"});
+            this.comboBox4.Location = new System.Drawing.Point(453, 137);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(274, 24);
             this.comboBox4.TabIndex = 10;
+            this.comboBox4.Visible = false;
             // 
             // checkBox1
             // 
@@ -171,6 +183,8 @@
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 11;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Visible = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // numericUpDown1
             // 
@@ -183,6 +197,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown1.TabIndex = 12;
+            this.numericUpDown1.Visible = false;
             // 
             // numericUpDown2
             // 
@@ -195,16 +210,18 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown2.TabIndex = 13;
+            this.numericUpDown2.Visible = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(12, 133);
+            this.label8.Location = new System.Drawing.Point(12, 176);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(196, 22);
             this.label8.TabIndex = 14;
             this.label8.Text = "Вид пиломатериала";
+            this.label8.Visible = false;
             // 
             // comboBox5
             // 
@@ -212,19 +229,21 @@
             this.comboBox5.Items.AddRange(new object[] {
             "Бруски, планки и фриз для паркета или деревянного покрытия полов,несобранные",
             "Иной"});
-            this.comboBox5.Location = new System.Drawing.Point(453, 133);
+            this.comboBox5.Location = new System.Drawing.Point(453, 176);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(274, 24);
             this.comboBox5.TabIndex = 15;
+            this.comboBox5.Visible = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(267, 402);
+            this.button1.Location = new System.Drawing.Point(267, 389);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(204, 36);
+            this.button1.Size = new System.Drawing.Size(204, 49);
             this.button1.TabIndex = 16;
-            this.button1.Text = "button1";
+            this.button1.Text = "Определить код ТН ВЭД ЕАЭС";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
