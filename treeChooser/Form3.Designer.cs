@@ -45,6 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 90);
+            this.label1.Location = new System.Drawing.Point(12, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(219, 22);
             this.label1.TabIndex = 0;
@@ -63,7 +64,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 218);
+            this.label2.Location = new System.Drawing.Point(12, 257);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 22);
             this.label2.TabIndex = 1;
@@ -74,7 +75,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(12, 50);
+            this.label3.Location = new System.Drawing.Point(12, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 22);
             this.label3.TabIndex = 2;
@@ -84,7 +85,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(12, 137);
+            this.label4.Location = new System.Drawing.Point(12, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(399, 22);
             this.label4.TabIndex = 3;
@@ -95,7 +96,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(12, 259);
+            this.label5.Location = new System.Drawing.Point(12, 298);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(271, 22);
             this.label5.TabIndex = 4;
@@ -106,7 +107,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(12, 305);
+            this.label6.Location = new System.Drawing.Point(12, 344);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(150, 22);
             this.label6.TabIndex = 5;
@@ -117,7 +118,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(12, 348);
+            this.label7.Location = new System.Drawing.Point(12, 387);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(163, 22);
             this.label7.TabIndex = 6;
@@ -126,12 +127,13 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "менее 22%",
             "22% и более",
             "-"});
-            this.comboBox1.Location = new System.Drawing.Point(453, 90);
+            this.comboBox1.Location = new System.Drawing.Point(524, 127);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(274, 24);
             this.comboBox1.TabIndex = 7;
@@ -139,12 +141,13 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Pinus sylvestris L.",
             "Picea abies Karst.",
             "Иной"});
-            this.comboBox2.Location = new System.Drawing.Point(453, 218);
+            this.comboBox2.Location = new System.Drawing.Point(524, 255);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(274, 24);
             this.comboBox2.TabIndex = 8;
@@ -152,12 +155,13 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Шлифование или торцевое соединение",
             "Строгание",
             "Прочее"});
-            this.comboBox3.Location = new System.Drawing.Point(453, 50);
+            this.comboBox3.Location = new System.Drawing.Point(524, 87);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(274, 24);
             this.comboBox3.TabIndex = 9;
@@ -165,11 +169,12 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "Шлифование или строгание",
             "Прочее"});
-            this.comboBox4.Location = new System.Drawing.Point(453, 137);
+            this.comboBox4.Location = new System.Drawing.Point(524, 174);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(274, 24);
             this.comboBox4.TabIndex = 10;
@@ -178,7 +183,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(453, 259);
+            this.checkBox1.Location = new System.Drawing.Point(524, 296);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 11;
@@ -188,7 +193,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(453, 305);
+            this.numericUpDown1.Location = new System.Drawing.Point(524, 342);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -201,7 +206,7 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(453, 348);
+            this.numericUpDown2.Location = new System.Drawing.Point(524, 385);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             500,
             0,
@@ -216,7 +221,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(12, 176);
+            this.label8.Location = new System.Drawing.Point(12, 215);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(196, 22);
             this.label8.TabIndex = 14;
@@ -225,11 +230,13 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.ItemHeight = 16;
             this.comboBox5.Items.AddRange(new object[] {
             "Бруски, планки и фриз для паркета или деревянного покрытия полов,несобранные",
             "Иной"});
-            this.comboBox5.Location = new System.Drawing.Point(453, 176);
+            this.comboBox5.Location = new System.Drawing.Point(524, 213);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(274, 24);
             this.comboBox5.TabIndex = 15;
@@ -237,7 +244,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(267, 389);
+            this.button1.Location = new System.Drawing.Point(301, 428);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(204, 49);
             this.button1.TabIndex = 16;
@@ -245,11 +252,25 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(12, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(506, 26);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Тут будет код ТН ВЭД ЕАЭС Вашего товара";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(739, 450);
+            this.ClientSize = new System.Drawing.Size(810, 497);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.label8);
@@ -295,5 +316,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label9;
     }
 }

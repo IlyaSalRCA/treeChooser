@@ -42,21 +42,21 @@ namespace treeChooser
             Oak oak_1501 = new Oak("менее 22%", "Иной", "Шлифование или торцевое соединение", "Шлифование или строгание", false, false, "4407 91 150 1");
             Oak oak_1503 = new Oak("менее 22%", "Иной", "Шлифование или торцевое соединение", "Прочее", false, false, "4407 91 150 3");
 
-            Oak oak_1504 = new Oak("22% и более", "Иной", "Шлифование или торцевое соединение", "-", true, true, "4407 91 150 4");
-            Oak oak_1505 = new Oak("22% и более", "Иной", "Шлифование или торцевое соединение", "-", true, false, "4407 91 150 5");
-            Oak oak_1509 = new Oak("22% и более", "Иной", "Шлифование или торцевое соединение", "-", false, false, "4407 91 150 9");
+            Oak oak_1504 = new Oak("22% и более", "Иной", "Шлифование или торцевое соединение", "Прочее", true, true, "4407 91 150 4");
+            Oak oak_1505 = new Oak("22% и более", "Иной", "Шлифование или торцевое соединение", "Прочее", true, false, "4407 91 150 5");
+            Oak oak_1509 = new Oak("22% и более", "Иной", "Шлифование или торцевое соединение", "Прочее", false, false, "4407 91 150 9");
 
             Oak oak_3100 = new Oak("-", "Бруски, планки и фриз для паркета или деревянного покрытия полов,несобранные", "Строгание", "-", false, false, "4407 91 310 0");
 
-            Oak oak_3901 = new Oak("менее 22%", "Иной", "Строгание", "-", false, false, "4407 91 390 1");
-            Oak oak_3905 = new Oak("22% и более", "Иной", "Строгание", "-", true, true, "4407 91 390 5");
-            Oak oak_3906 = new Oak("22% и более", "Иной", "Строгание", "-", true, false, "4407 91 390 6");
-            Oak oak_3909 = new Oak("22% и более", "Иной", "Строгание", "-", false, false, "4407 91 390 9");
+            Oak oak_3901 = new Oak("менее 22%", "Иной", "Строгание", "Прочее", false, false, "4407 91 390 1");
+            Oak oak_3905 = new Oak("22% и более", "Иной", "Строгание", "Прочее", true, true, "4407 91 390 5");
+            Oak oak_3906 = new Oak("22% и более", "Иной", "Строгание", "Прочее", true, false, "4407 91 390 6");
+            Oak oak_3909 = new Oak("22% и более", "Иной", "Строгание", "Прочее", false, false, "4407 91 390 9");
 
-            Oak oak_9001 = new Oak("менее 22%", "Иной", "Прочее", "-", false, false, "4407 91 900 1");
-            Oak oak_9005 = new Oak("22% и более", "Иной", "Прочее", "-    ", true, true, "4407 91 900 5");
-            Oak oak_9006 = new Oak("22% и более", "Иной", "Прочее", "-", true, false, "4407 91 900 6");
-            Oak oak_9009 = new Oak("22% и более", "Иной", "Прочее", "-", false, false, "4407 91 900 9");
+            Oak oak_9001 = new Oak("менее 22%", "Иной", "Прочее", "Прочее", false, false, "4407 91 900 1");
+            Oak oak_9005 = new Oak("22% и более", "Иной", "Прочее", "Прочее", true, true, "4407 91 900 5");
+            Oak oak_9006 = new Oak("22% и более", "Иной", "Прочее", "Прочее", true, false, "4407 91 900 6");
+            Oak oak_9009 = new Oak("22% и более", "Иной", "Прочее", "Прочее", false, false, "4407 91 900 9");
 
             oaks.Add(oak_1501);
             oaks.Add(oak_1503);
@@ -75,6 +75,28 @@ namespace treeChooser
             oaks.Add(oak_9005);
             oaks.Add(oak_9006);
             oaks.Add(oak_9009);
+        }
+
+        internal static string CheckNomenclatureCose(Oak oak)
+        {
+            for (int i = 0; i < oaks.Count; i++)
+            {
+                if (oak.treeHumidity == oaks[i].treeHumidity &&
+                    oak.lumberType == oaks[i].lumberType &&
+                    oak.treeProcessing == oaks[i].treeProcessing &&
+                    oak.treeProcessingSecond == oaks[i].treeProcessingSecond &&
+                    oak.treePlates == oaks[i].treePlates &&
+                    oak.treePlatesWidthDepth == oaks[i].treePlatesWidthDepth)
+                {
+                    oak.nomenclatureCode = oaks[i].nomenclatureCode;
+                    break;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            return oak.nomenclatureCode;
         }
     }
 }
