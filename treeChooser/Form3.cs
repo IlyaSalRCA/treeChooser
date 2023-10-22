@@ -212,6 +212,8 @@ namespace treeChooser
                 comboBox3.SelectedIndex = 0;
             if (comboBox1.SelectedIndex == -1)
                 comboBox1.SelectedIndex = 0;
+            if (comboBox5.SelectedIndex == 0 && treeTypeIndex == 3)
+                comboBox1.SelectedIndex = 2;
 
             TakingText(); //Получение текста из полей
 
