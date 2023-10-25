@@ -260,9 +260,9 @@
             this.label9.ForeColor = System.Drawing.Color.Red;
             this.label9.Location = new System.Drawing.Point(12, 27);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(506, 26);
+            this.label9.Size = new System.Drawing.Size(537, 26);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Тут будет код ТН ВЭД ЕАЭС Вашего товара";
+            this.label9.Text = "Здесь будет код ТН ВЭД ЕАЭС Вашего товара";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form3
@@ -288,8 +288,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "Этап 3";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);

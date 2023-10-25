@@ -239,7 +239,10 @@ namespace treeChooser
                     break;
             }
 
-            label9.Text = $"Ваш код ТН ВЭД ЕАЭС: {nomenclatureCode}";
+            if (nomenclatureCode != "")
+                label9.Text = $"Ваш код ТН ВЭД ЕАЭС: {nomenclatureCode}";
+            else
+                label9.Text = "Ошибка классификации";
         }
 
         private void TakingText()
